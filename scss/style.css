@@ -145,6 +145,7 @@ th:not([align]) {
   .whyFiber .review {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    max-width: 100%;
   }
   .primary {
     width: 100%;
@@ -411,6 +412,8 @@ header {
   display: -ms-grid;
   display: grid;
   grid-gap: 2rem;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 .whyFiber .review .review__card {
@@ -446,6 +449,7 @@ header {
 }
 
 .whyFiber .review .review__card p {
+  white-space: normal;
   min-height: 120px;
   font-size: 15px;
   font-weight: 300;

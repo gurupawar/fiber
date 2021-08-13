@@ -51,12 +51,14 @@
   }
   .review {
     grid-template-columns: 1fr 1fr 1fr;
+    // max-width: 100%;
   }
 }
 @media (max-width: 992px) {
   .whyFiber {
     .review {
       grid-template-columns: 1fr;
+      max-width: 100%;
     }
   }
   .primary {

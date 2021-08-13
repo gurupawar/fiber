@@ -175,6 +175,8 @@ header {
     margin-top: 4rem;
     display: grid;
     grid-gap: 2rem;
+    overflow: auto;
+    white-space: nowrap;
     .review__card {
       padding: 1.5rem;
       border: 1px solid rgba(0, 0, 0, 0.329);
@@ -194,6 +196,7 @@ header {
         }
       }
       p {
+        white-space: normal;
         min-height: 120px;
         font-size: 15px;
         font-weight: 300;
