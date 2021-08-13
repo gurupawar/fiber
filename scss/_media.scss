@@ -7,6 +7,9 @@
 
 // Medium devices (tablets, 768px and up)
 @media (max-width: 768px) {
+  menu {
+    display: none;
+  }
   footer {
     flex-direction: column;
     .sitemap,
@@ -50,15 +53,17 @@
     }
   }
   .review {
-    grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
     // max-width: 100%;
   }
 }
 @media (max-width: 992px) {
   .whyFiber {
     .review {
-      grid-template-columns: 1fr;
+      // grid-template-columns: 1fr;
       max-width: 100%;
+      flex-direction: column;
     }
   }
   .primary {

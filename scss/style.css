@@ -1,10 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap");
+:root {
+  --bg: #fbf8f3;
+  --ligh-bg: #fff;
+  --theme: #4d13d1;
+  --light-dark-text: rgba(0, 0, 0, 0.699);
+  --dark-border: rgba(0, 0, 0, 0.329);
+}
+
 html,
 body {
   height: 100%;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  background: #fbf8f3;
+  background: var(--bg);
 }
 
 *,
@@ -95,6 +103,9 @@ th:not([align]) {
 }
 
 @media (max-width: 768px) {
+  menu {
+    display: none;
+  }
   footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -136,16 +147,20 @@ th:not([align]) {
     margin-left: 12px;
   }
   .review {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
 @media (max-width: 992px) {
   .whyFiber .review {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
     max-width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .primary {
     width: 100%;
@@ -212,7 +227,7 @@ header {
   padding: 1.5rem 0;
 }
 
-.header__wrapper {
+header .header__wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -221,25 +236,21 @@ header {
           justify-content: space-between;
 }
 
-.header__wrapper span {
+header .header__wrapper span {
   font-size: 18px;
   font-weight: 600;
 }
 
-.header__wrapper menu {
-  display: none;
-}
-
-.header__wrapper menu ul li + li {
+header .header__wrapper menu ul li + li {
   margin-left: 1rem;
 }
 
-.header__wrapper .btn__wrapper .btn + .btn {
+header .header__wrapper .btn__wrapper .btn + .btn {
   margin-left: 1rem;
 }
 
-.header__wrapper menu,
-.header__wrapper .btn {
+header .header__wrapper menu,
+header .header__wrapper .btn {
   font-size: 14px;
 }
 
@@ -284,7 +295,7 @@ header {
 }
 
 .hero .hero__left p {
-  color: rgba(0, 0, 0, 0.699);
+  color: var(--light-dark-text);
 }
 
 .hero .hero__left .btn__wrapper {
@@ -296,13 +307,13 @@ header {
 
 .hero .hero__left .btn__wrapper a {
   text-decoration: underline;
-  color: #4d13d1;
+  color: var(--theme);
   font-weight: 500;
 }
 
 .hero .hero__left .text .text__wrapper {
   font-size: 12.2px;
-  color: rgba(0, 0, 0, 0.699);
+  color: var(--light-dark-text);
   margin-bottom: 10px;
 }
 
@@ -319,12 +330,12 @@ header {
 
 .whyFiber {
   padding: 2rem 0;
-  background: #ffff;
+  background: var(--ligh-bg);
 }
 
 .whyFiber .whyfiberTag {
   font-weight: 600;
-  color: #4d13d1;
+  color: var(--theme);
   font-size: 13px;
 }
 
@@ -358,7 +369,7 @@ header {
 .whyFiber .cards .card p {
   margin-top: 10px;
   font-weight: 14px;
-  color: rgba(0, 0, 0, 0.699);
+  color: var(--light-dark-text);
 }
 
 .whyFiber .bigCard {
@@ -366,7 +377,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #4d13d1;
+  background: var(--theme);
   padding: 2rem 2rem 0 2rem;
   border-radius: 8px;
 }
@@ -378,7 +389,7 @@ header {
 }
 
 .whyFiber .bigCard .bigCard__left h2 {
-  color: #fff;
+  color: var(--ligh-bg);
   font-weight: 600;
   font-size: 2rem;
 }
@@ -391,9 +402,9 @@ header {
 }
 
 .whyFiber .bigCard .bigCard__left .btn {
-  background: #fff;
+  background: var(--ligh-bg);
   font-weight: 600;
-  color: #4d13d1;
+  color: var(--theme);
 }
 
 .whyFiber .bigCard .bigCard__right {
@@ -409,8 +420,9 @@ header {
 .whyFiber .review {
   padding: 2rem 0;
   margin-top: 4rem;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   grid-gap: 2rem;
   overflow: auto;
   white-space: nowrap;
@@ -418,7 +430,17 @@ header {
 
 .whyFiber .review .review__card {
   padding: 1.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.329);
+  border: 1px solid var(--dark-border);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .whyFiber .review .review__card .top {
@@ -443,25 +465,24 @@ header {
 }
 
 .whyFiber .review .review__card .top .group .name {
-  color: #4d13d1;
+  color: var(--theme);
   font-weight: 600;
   margin-bottom: -2px;
 }
 
 .whyFiber .review .review__card p {
   white-space: normal;
-  min-height: 120px;
   font-size: 15px;
   font-weight: 300;
-  margin: 1.2rem 0 0 0;
+  margin: 1.2rem 0;
 }
 
 .whyFiber .review .review__card .btn__secondary {
-  border: 1px solid rgba(0, 0, 0, 0.329);
+  border: 1px solid var(--dark-border);
   padding: 10px;
   width: 100%;
   font-weight: 600;
-  color: #4d13d1;
+  color: var(--theme);
   font-size: 17px;
 }
 
@@ -479,7 +500,7 @@ footer a,
 footer p,
 footer span {
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 footer .fiber {
@@ -488,6 +509,18 @@ footer .fiber {
 
 footer .fiber p {
   margin-bottom: 1rem;
+  color: var(--light-dark-text);
+}
+
+footer a {
+  color: var(--light-dark-text);
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+footer a:hover {
+  font-weight: 400;
+  color: #000;
 }
 
 button {
@@ -498,9 +531,15 @@ button {
 }
 
 .primary {
-  background: #4d13d1;
-  color: #fff;
+  background: var(--theme);
+  color: var(--ligh-bg);
   padding: 10px 13px;
   border-radius: 4px;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.primary:hover {
+  background: #390e9e;
 }
 /*# sourceMappingURL=style.css.map */

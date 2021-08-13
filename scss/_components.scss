@@ -6,8 +6,12 @@ button {
 }
 
 .primary {
-  background: #4d13d1;
-  color: #fff;
+  background: var(--theme);
+  color: var(--ligh-bg);
   padding: 10px 13px;
   border-radius: 4px;
+  transition: 0.2s ease-out;
+  &:hover {
+    background: rgb(57, 14, 158);
+  }
 }

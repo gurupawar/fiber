@@ -5,6 +5,7 @@
   margin-left: auto;
 }
 
+// ------------------------------------- common style
 .header__wrapper,
 menu ul,
 .btn__wrapper,
@@ -18,38 +19,36 @@ footer,
   display: flex;
 }
 
+// ------------------------------------- Header
 header {
   padding: 1.5rem 0;
-}
-.header__wrapper {
-  align-items: center;
-  justify-content: space-between;
-  span {
-    font-size: 18px;
-    font-weight: 600;
-  }
-  menu {
-    display: none;
-  }
-  menu {
-    ul li + li {
-      margin-left: 1rem;
-    }
-  }
-  .btn__wrapper {
-    .btn + .btn {
-      margin-left: 1rem;
-    }
-  }
-  menu,
-  .btn {
-    font-size: 14px;
-  }
-}
 
+  .header__wrapper {
+    align-items: center;
+    justify-content: space-between;
+    span {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    menu {
+      ul li + li {
+        margin-left: 1rem;
+      }
+    }
+    .btn__wrapper {
+      .btn + .btn {
+        margin-left: 1rem;
+      }
+    }
+    menu,
+    .btn {
+      font-size: 14px;
+    }
+  }
+}
+// ------------------------------------- HERO
 .hero {
   padding-bottom: 4rem;
-  //   flex-direction: row;
   .hero__left {
     padding-top: 6rem;
     flex: 1;
@@ -76,21 +75,21 @@ header {
       max-width: 350px;
     }
     p {
-      color: rgba(0, 0, 0, 0.699);
+      color: var(--light-dark-text);
     }
     .btn__wrapper {
       align-items: center;
       margin: 1rem 0;
       a {
         text-decoration: underline;
-        color: #4d13d1;
+        color: var(--theme);
         font-weight: 500;
       }
     }
     .text {
       .text__wrapper {
         font-size: 12.2px;
-        color: rgba(0, 0, 0, 0.699);
+        color: var(--light-dark-text);
         margin-bottom: 10px;
         img {
           width: 15px;
@@ -104,12 +103,13 @@ header {
   }
 }
 
+// ------------------------------------- Why Fiber Section
 .whyFiber {
   padding: 2rem 0;
-  background: #ffff;
+  background: var(--ligh-bg);
   .whyfiberTag {
     font-weight: 600;
-    color: #4d13d1;
+    color: var(--theme);
     font-size: 13px;
   }
   h3 {
@@ -134,20 +134,20 @@ header {
       p {
         margin-top: 10px;
         font-weight: 14px;
-        color: rgba(0, 0, 0, 0.699);
+        color: var(--light-dark-text);
       }
     }
   }
   .bigCard {
     margin-top: 2rem;
     align-items: center;
-    background: #4d13d1;
+    background: var(--theme);
     padding: 2rem 2rem 0 2rem;
     border-radius: 8px;
     .bigCard__left {
       flex: 1;
       h2 {
-        color: #fff;
+        color: var(--ligh-bg);
         font-weight: 600;
         font-size: 2rem;
       }
@@ -158,9 +158,9 @@ header {
         font-weight: 300;
       }
       .btn {
-        background: #fff;
+        background: var(--ligh-bg);
         font-weight: 600;
-        color: #4d13d1;
+        color: var(--theme);
       }
     }
     .bigCard__right {
@@ -173,13 +173,16 @@ header {
   .review {
     padding: 2rem 0;
     margin-top: 4rem;
-    display: grid;
+    display: flex;
     grid-gap: 2rem;
     overflow: auto;
     white-space: nowrap;
     .review__card {
       padding: 1.5rem;
-      border: 1px solid rgba(0, 0, 0, 0.329);
+      border: 1px solid var(--dark-border);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       .top {
         display: flex;
         align-items: center;
@@ -189,7 +192,7 @@ header {
           flex-direction: column;
           font-size: 15px;
           .name {
-            color: #4d13d1;
+            color: var(--theme);
             font-weight: 600;
             margin-bottom: -2px;
           }
@@ -197,23 +200,23 @@ header {
       }
       p {
         white-space: normal;
-        min-height: 120px;
         font-size: 15px;
         font-weight: 300;
-        margin: 1.2rem 0 0 0;
+        margin: 1.2rem 0;
       }
       .btn__secondary {
-        border: 1px solid rgba(0, 0, 0, 0.329);
+        border: 1px solid var(--dark-border);
         padding: 10px;
         width: 100%;
         font-weight: 600;
-        color: #4d13d1;
+        color: var(--theme);
         font-size: 17px;
       }
     }
   }
 }
 
+// ------------------------------------- FOOTER
 footer {
   padding: 2rem 0;
   h5 {
@@ -225,13 +228,22 @@ footer {
   p,
   span {
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 400;
   }
   .fiber {
     max-width: 250px;
 
     p {
       margin-bottom: 1rem;
+      color: var(--light-dark-text);
+    }
+  }
+  a {
+    color: var(--light-dark-text);
+    transition: 0.2s ease-out;
+    &:hover {
+      font-weight: 400;
+      color: #000;
     }
   }
 }
