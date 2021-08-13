@@ -180,6 +180,7 @@ header {
     overflow: auto;
     white-space: nowrap;
     .review__card {
+      border-radius: 3px;
       padding: 1.5rem;
       border: 1px solid var(--dark-border);
       display: flex;
