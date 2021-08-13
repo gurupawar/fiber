@@ -101,6 +101,12 @@ th:not([align]) {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  footer .sitemap,
+  footer .resources,
+  footer .company,
+  footer .portfolios {
+    margin-top: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -194,7 +200,8 @@ menu ul,
 .hero,
 .text,
 .text__wrapper,
-footer {
+footer,
+.bigCard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,7 +243,7 @@ header {
 }
 
 .hero {
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 
 .hero .hero__left {
@@ -295,6 +302,7 @@ header {
 .hero .hero__left .text .text__wrapper {
   font-size: 12.2px;
   color: rgba(0, 0, 0, 0.699);
+  margin-bottom: 10px;
 }
 
 .hero .hero__left .text .text__wrapper img {
@@ -354,9 +362,6 @@ header {
 
 .whyFiber .bigCard {
   margin-top: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -461,7 +466,7 @@ footer {
 }
 
 footer h5 {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   margin-bottom: 5px;
 }

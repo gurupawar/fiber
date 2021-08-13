@@ -9,6 +9,12 @@
 @media (max-width: 768px) {
   footer {
     flex-direction: column;
+    .sitemap,
+    .resources,
+    .company,
+    .portfolios {
+      margin-top: 1rem;
+    }
   }
 }
 @media (min-width: 768px) {

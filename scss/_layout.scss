@@ -13,7 +13,8 @@ menu ul,
 .hero,
 .text,
 .text__wrapper,
-footer {
+footer,
+.bigCard {
   display: flex;
 }
 
@@ -47,7 +48,7 @@ header {
 }
 
 .hero {
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
   //   flex-direction: row;
   .hero__left {
     padding-top: 6rem;
@@ -90,6 +91,7 @@ header {
       .text__wrapper {
         font-size: 12.2px;
         color: rgba(0, 0, 0, 0.699);
+        margin-bottom: 10px;
         img {
           width: 15px;
           margin-right: 4px;
@@ -138,7 +140,6 @@ header {
   }
   .bigCard {
     margin-top: 2rem;
-    display: flex;
     align-items: center;
     background: #4d13d1;
     padding: 2rem 2rem 0 2rem;
@@ -212,9 +213,8 @@ header {
 
 footer {
   padding: 2rem 0;
-  // flex-direction: row;
   h5 {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: 5px;
   }
@@ -224,13 +224,6 @@ footer {
     font-size: 13px;
     font-weight: 300;
   }
-  // .sitemap,
-  // .resources,
-  // .company,
-  // .portfolios {
-  //   margin-left: 3rem;
-  // }
-
   .fiber {
     max-width: 250px;
 
