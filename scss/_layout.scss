@@ -115,8 +115,9 @@ header {
   h3 {
     font-size: 24px;
     font-weight: 600;
+    line-height: 35px;
     margin: 7px 0 2.5rem 0;
-    max-width: 350px;
+    max-width: 360px;
   }
   .cards {
     width: 100%;
@@ -133,7 +134,7 @@ header {
       }
       p {
         margin-top: 10px;
-        font-weight: 14px;
+        font-weight: 400;
         color: var(--light-dark-text);
       }
     }
@@ -150,6 +151,7 @@ header {
         color: var(--ligh-bg);
         font-weight: 600;
         font-size: 2rem;
+        line-height: 43px;
       }
       p {
         color: rgba(255, 255, 255, 0.568);
@@ -242,7 +244,6 @@ footer {
     color: var(--light-dark-text);
     transition: 0.2s ease-out;
     &:hover {
-      font-weight: 400;
       color: #000;
     }
   }

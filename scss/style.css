@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 :root {
   --bg: #fbf8f3;
   --ligh-bg: #fff;
@@ -342,8 +342,9 @@ header .header__wrapper .btn {
 .whyFiber h3 {
   font-size: 24px;
   font-weight: 600;
+  line-height: 35px;
   margin: 7px 0 2.5rem 0;
-  max-width: 350px;
+  max-width: 360px;
 }
 
 .whyFiber .cards {
@@ -368,7 +369,7 @@ header .header__wrapper .btn {
 
 .whyFiber .cards .card p {
   margin-top: 10px;
-  font-weight: 14px;
+  font-weight: 400;
   color: var(--light-dark-text);
 }
 
@@ -392,6 +393,7 @@ header .header__wrapper .btn {
   color: var(--ligh-bg);
   font-weight: 600;
   font-size: 2rem;
+  line-height: 43px;
 }
 
 .whyFiber .bigCard .bigCard__left p {
@@ -519,7 +521,6 @@ footer a {
 }
 
 footer a:hover {
-  font-weight: 400;
   color: #000;
 }
 
