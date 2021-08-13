@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap");
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: #fbf8f3;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"],
+[role="button"] {
+  cursor: pointer;
+  color: inherit;
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+td:not([align]),
+th:not([align]) {
+  text-align: left;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  footer .sitemap,
+  footer .resources,
+  footer .company,
+  footer .portfolios {
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .whyFiber .cards {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .whyFiber .bigCard__left {
+    padding-right: 2rem;
+  }
+  .btn__wrapper a {
+    margin-left: 1rem;
+  }
+  .text .text__wrapper + .text__wrapper {
+    margin-left: 12px;
+  }
+  .review {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .whyFiber .review {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .primary {
+    width: 100%;
+  }
+  .bigCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bigCard .bigCard__left .btn {
+    margin-bottom: 2rem;
+  }
+  .container {
+    max-width: 960px;
+  }
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .hero .hero__left .btn__wrapper,
+  .hero .hero__left .text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero .hero__left .btn__wrapper a {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.container {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header__wrapper,
+menu ul,
+.btn__wrapper,
+.rating,
+.stars,
+.hero,
+.text,
+.text__wrapper,
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header {
+  padding: 1.5rem 0;
+}
+
+.header__wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__wrapper span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header__wrapper menu {
+  display: none;
+}
+
+.header__wrapper menu ul li + li {
+  margin-left: 1rem;
+}
+
+.header__wrapper .btn__wrapper .btn + .btn {
+  margin-left: 1rem;
+}
+
+.header__wrapper menu,
+.header__wrapper .btn {
+  font-size: 14px;
+}
+
+.hero {
+  padding-bottom: 5rem;
+}
+
+.hero .hero__left {
+  padding-top: 6rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.hero .hero__left .rating {
+  margin-bottom: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero__left .rating img {
+  width: 14px;
+  height: 14px;
+}
+
+.hero .hero__left .rating img + img {
+  margin-left: 3px;
+}
+
+.hero .hero__left .rating span {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.hero .hero__left h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 43px;
+  margin-bottom: 13px;
+  max-width: 350px;
+}
+
+.hero .hero__left p {
+  color: rgba(0, 0, 0, 0.699);
+}
+
+.hero .hero__left .btn__wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0;
+}
+
+.hero .hero__left .btn__wrapper a {
+  text-decoration: underline;
+  color: #4d13d1;
+  font-weight: 500;
+}
+
+.hero .hero__left .text .text__wrapper {
+  font-size: 12.2px;
+  color: rgba(0, 0, 0, 0.699);
+}
+
+.hero .hero__left .text .text__wrapper img {
+  width: 15px;
+  margin-right: 4px;
+}
+
+.hero .hero__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.whyFiber {
+  padding: 2rem 0;
+  background: #ffff;
+}
+
+.whyFiber .whyfiberTag {
+  font-weight: 600;
+  color: #4d13d1;
+  font-size: 13px;
+}
+
+.whyFiber h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 7px 0 2.5rem 0;
+  max-width: 350px;
+}
+
+.whyFiber .cards {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+.whyFiber .cards .card {
+  margin-bottom: 1.4rem;
+}
+
+.whyFiber .cards .card img {
+  margin-bottom: 8px;
+}
+
+.whyFiber .cards .card span {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.whyFiber .cards .card p {
+  margin-top: 10px;
+  font-weight: 14px;
+  color: rgba(0, 0, 0, 0.699);
+}
+
+.whyFiber .bigCard {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #4d13d1;
+  padding: 2rem 2rem 0 2rem;
+  border-radius: 8px;
+}
+
+.whyFiber .bigCard .bigCard__left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.whyFiber .bigCard .bigCard__left h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.whyFiber .bigCard .bigCard__left p {
+  color: rgba(255, 255, 255, 0.568);
+  margin: 1rem 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.whyFiber .bigCard .bigCard__left .btn {
+  background: #fff;
+  font-weight: 600;
+  color: #4d13d1;
+}
+
+.whyFiber .bigCard .bigCard__right {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+}
+
+.whyFiber .bigCard .bigCard__right img {
+  min-height: 300px;
+}
+
+.whyFiber .review {
+  padding: 2rem 0;
+  margin-top: 4rem;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+.whyFiber .review .review__card {
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.329);
+}
+
+.whyFiber .review .review__card .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.whyFiber .review .review__card .top .group {
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 15px;
+}
+
+.whyFiber .review .review__card .top .group .name {
+  color: #4d13d1;
+  font-weight: 600;
+  margin-bottom: -2px;
+}
+
+.whyFiber .review .review__card p {
+  min-height: 120px;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 1.2rem 0 0 0;
+}
+
+.whyFiber .review .review__card .btn__secondary {
+  border: 1px solid rgba(0, 0, 0, 0.329);
+  padding: 10px;
+  width: 100%;
+  font-weight: 600;
+  color: #4d13d1;
+  font-size: 17px;
+}
+
+footer {
+  padding: 2rem 0;
+}
+
+footer h5 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+footer a,
+footer p,
+footer span {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+footer .fiber {
+  max-width: 250px;
+}
+
+footer .fiber p {
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  font-weight: 500;
+  min-width: 50px;
+}
+
+.primary {
+  background: #4d13d1;
+  color: #fff;
+  padding: 10px 13px;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=style.css.map */

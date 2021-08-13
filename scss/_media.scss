@@ -1,0 +1,90 @@
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  footer {
+    .sitemap,
+    .resources,
+    .company,
+    .portfolios {
+      margin-left: 3rem;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .whyFiber {
+    .cards {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .bigCard__left {
+      padding-right: 2rem;
+    }
+  }
+  .btn__wrapper a {
+    margin-left: 1rem;
+  }
+  .text {
+    .text__wrapper + .text__wrapper {
+      margin-left: 12px;
+    }
+  }
+  .review {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 992px) {
+  .whyFiber {
+    .review {
+      grid-template-columns: 1fr;
+    }
+  }
+  .primary {
+    width: 100%;
+  }
+
+  .bigCard {
+    flex-direction: column;
+    .bigCard__left {
+      .btn {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .container {
+    max-width: 960px;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    .hero__left {
+      .btn__wrapper,
+      .text {
+        flex-direction: column;
+      }
+      .btn__wrapper a {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
