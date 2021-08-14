@@ -1,9 +1,8 @@
-button {
-  background-color: transparent;
-  border: 0;
-  font-weight: 500;
-  min-width: 50px;
-}
+// .button {
+//   background-color: transparent;
+//   border: 0;
+//   font-weight: 500;
+// }
 
 .primary {
   background: var(--theme);
@@ -11,6 +10,8 @@ button {
   padding: 10px 13px;
   border-radius: 4px;
   transition: 0.2s ease-out;
+  text-align: center;
+  cursor: pointer;
   &:hover {
     background: rgb(57, 14, 158);
   }

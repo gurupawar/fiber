@@ -36,6 +36,11 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  .hero {
+    .heroBtn {
+      margin-right: 1rem;
+    }
+  }
   .whyFiber {
     .cards {
       grid-template-columns: 1fr 1fr 1fr;
@@ -44,9 +49,9 @@
       padding-right: 2rem;
     }
   }
-  .btn__wrapper a {
-    margin-left: 1rem;
-  }
+  // .btn__wrapper a {
+  //   margin-left: 1rem;
+  // }
   .text {
     .text__wrapper + .text__wrapper {
       margin-left: 12px;
@@ -72,11 +77,6 @@
 
   .bigCard {
     flex-direction: column;
-    .bigCard__left {
-      .btn {
-        margin-bottom: 2rem;
-      }
-    }
   }
   .container {
     max-width: 960px;

@@ -36,12 +36,16 @@ header {
       }
     }
     .btn__wrapper {
-      .btn + .btn {
-        margin-left: 1rem;
+      align-items: center;
+      .btn1 {
+        margin-right: 1rem;
+        cursor: pointer;
+        min-width: 50px;
       }
     }
     menu,
-    .btn {
+    .btn,
+    .btn1 {
       font-size: 14px;
     }
   }
@@ -80,7 +84,7 @@ header {
     .btn__wrapper {
       align-items: center;
       margin: 1rem 0;
-      a {
+      .textLink {
         text-decoration: underline;
         color: var(--theme);
         font-weight: 500;
@@ -140,12 +144,12 @@ header {
     }
   }
   .bigCard {
-    margin-top: 2rem;
     align-items: center;
     background: var(--theme);
     padding: 2rem 2rem 0 2rem;
     border-radius: 8px;
     .bigCard__left {
+      margin-bottom: 2rem;
       flex: 1;
       h2 {
         color: var(--ligh-bg);
@@ -155,11 +159,11 @@ header {
       }
       p {
         color: rgba(255, 255, 255, 0.568);
-        margin: 1rem 0;
+        margin: 1rem 0 2rem 0;
         font-size: 14px;
         font-weight: 300;
       }
-      .btn {
+      .btn3 {
         background: var(--ligh-bg);
         font-weight: 600;
         color: var(--theme);
@@ -176,10 +180,11 @@ header {
     padding: 2rem 0;
     margin-top: 4rem;
     display: flex;
-    grid-gap: 2rem;
+    gap: 2rem;
     overflow: auto;
     white-space: nowrap;
     .review__card {
+      border-radius: 3px;
       padding: 1.5rem;
       border: 1px solid var(--dark-border);
       display: flex;
