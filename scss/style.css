@@ -152,6 +152,9 @@ th:not([align]) {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .review .review__card {
+    margin-right: 2rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -161,6 +164,9 @@ th:not([align]) {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .whyFiber .review .review__card {
+    margin-bottom: 2rem;
   }
   .primary {
     width: 100%;
@@ -431,7 +437,6 @@ header .header__wrapper .btn1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2rem;
   overflow: auto;
   white-space: nowrap;
 }

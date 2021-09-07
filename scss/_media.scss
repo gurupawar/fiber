@@ -61,6 +61,9 @@
     // grid-template-columns: 1fr 1fr 1fr;
     flex-direction: row;
     // max-width: 100%;
+    .review__card {
+      margin-right: 2rem;
+    }
   }
 }
 @media (max-width: 992px) {
@@ -69,6 +72,9 @@
       // grid-template-columns: 1fr;
       max-width: 100%;
       flex-direction: column;
+      .review__card {
+        margin-bottom: 2rem;
+      }
     }
   }
   .primary {
